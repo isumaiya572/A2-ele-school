@@ -4,42 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elementary school</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body class="quicksand-font">
-        <nav class="nav-bar container">
+        <nav style="margin-top: 16px;" class="nav-bar container-h">
            <div class="main-nav">
             <img  src="assets/logo.png" alt="logo for school web">
             <span class="logo-text">SCHOOL</span>
-        </div> 
-                <ul class="nav-logo">
-                    <li class="logo-link"><a href="#" class="logo-cls"><span class="cl-1">Home</span> </a></li>
-                    <li class="logo-link"><a href="#" class="logo-cls"><span class="cl-2">About</span></a></li>
-                    <li class="logo-link"><a href="#" class="logo-cls"><span class="cl-3">Facilities</span></a></li>
-                    <li class="logo-link"><a href="#" class="logo-cls"><span class="cl-4">Admission</span></a></li>
-                </ul> 
-                <button class="btn-praimary">Contact</button>
-        </nav>
+           </div> 
+            <ul class="nav-logo">
+                <li class="logo-link"><a href="#" class="logo-cls"><span class="cl-1">Home</span> </a></li>
+                <li class="logo-link"><a href="#" class="logo-cls"><span class="cl-2">About</span></a></li>
+                <li class="logo-link"><a href="#" class="logo-cls"><span class="cl-3">Facilities</span></a></li>
+                <li class="logo-link"><a href="#" class="logo-cls"><span class="cl-4">Admission</span></a></li>
+            </ul> 
+            <button class="btn-praimary contact">Contact</button>
+            <p  id="hamburger"><i class="fa-solid fa-bars"></i></p>
+         </nav>
         <header>
-            <div class="header-section container display-flex">
-                <div class="left-header">
+            <div class="header-section container-h display-flex">
+                <div class="leftt-header">
                    <h2 class="head-title"><span class="color-1">Empowering</span><br>
                    <span class="color-2"> students from small<br>age</span> <span class="color-3">towards vision</span></h2>
                    <p class="pera-1">With the courage, Confidence, Creativity and Compassion to
                      make their Unique Contribution in a Diverse and Dynamic World.</p>
                      <button class="btn-2">Enroll Now</button>
+                
                 </div>
-                <div class="right-header">
+                <div class="rightt-header">
                       <img src="assets/hero-kids.png" alt="hero-kids">
                 </div>
             </div>
         </header>
     <main>
         <!-- <h2 class="font-text">Standard Curriculum</h2> -->
-        <div class="card-section container">
+        <div class="cardd-section container">
             <h1 class="font-text">Standard Curriculum</h1>
-            <div class="cards-container">
-                <div class="card card-1">
+            <div class="cardds-container">
+                <div class="cardd cardd-1">
                     <div class="icon">
                         <img src="assets/kinder.png" alt="Kinder">
                     </div>
@@ -48,7 +51,7 @@
                          focusing on their physical, emotional, social, and cognitive development.</p>
                     <a class="read-me-1" href="#">Read More</a>
                 </div>
-                <div class="card card-2">
+                <div class="cardd cardd-2">
                     <div class="icon">
                         <img src="assets/elementary.png" alt="Elementary">
                     </div>
@@ -57,7 +60,7 @@
                      they need to thrive in an ever-changing world.</p>
                     <a class="read-me-2" href="#">Read More</a>
                 </div>
-                <div class="card card-3">
+                <div class="cardd cardd-3">
                     <div class="icon">
                         <img src="assets/middle.png" alt="Middle">
                     </div>
@@ -69,20 +72,124 @@
            </div>
            <!-- unsing unicode/ special charecter for button  -->
            <div class="navigation">
-            <button class="left">&#10094</button>   
-            <button class="right">&#10095</button>
+            <button class="lefttt">&#10094</button>   
+            <button class="righttt">&#10095</button>
         </div>
-            <section>
-                <h1 class="font-text">Our Stories</h1>
-                <div class="img-11">
-                    <img src="assets/bg.png" alt="background image">
-                </div>
-            </section>
-        
-      
-    </main>
-    <footer>
+        <section class="stories">
+            <h2 class="h2-11">Our Stories</h2>
+            <div class="story-container">
+                 <div class="left">  
+                     <div class="img-container">
+                        <img src="assets/story-1.png" alt="">
+                     </div>
+                     <div class="description">
+                        <h4 class="font-text-2">A fun toddler coloring training on classroom</h4>
+                        <p class="pera-1"> 
+                            Beautiful branding for changes by Never Now in Australia.
+                            changes is a platform for open discussion in an inclusive and
+                            collaborative environment, providing the...
+                        </p>
+                        <button class="btn-00">November 19, 2019</button>
+                     </div> 
+                 </div>
 
-    </footer>  
+                 <div class=" right"> 
+                       <div class="cartt">
+                           <div class="img-container">
+                               <img src="assets/story-2.png" alt="">
+                           </div>
+                           <div  class="description">
+                                <p class="pera-1">Conversation rhymes
+                                    improve kids listening
+                                </p>
+                                <button class="btn-01">July 19, 2019</button>
+                           </div>
+                       </div>
+
+                       <div class="cartt">
+                        <div class="img-container">
+                            <img src="assets/story-3.png" alt="">
+                        </div>
+                        <div class="description">
+                             <p class="pera-1">Classroom management
+                                techniques for new tutors</p>
+                             <button class="btn-02">September 10, 2019</button>
+                        </div>
+                    </div>
+
+                    <div class="cartt">
+                        <div class="img-container">
+                            <img src="assets/story-4.png" alt="">
+                        </div>
+                        <div class="description">
+                             <p class="pera-1">Summer math & literacy
+                                centres for kids</p>
+                             <button class="btn-03">November 19, 2019</button>
+                        </div>
+                    </div>
+
+                    <div class="cartt">
+                        <div class="img-container">
+                            <img src="assets/story-5.png" alt="">
+                        </div>
+                        <div class="description">
+                             <p class="pera-1">Find out if a school fits the
+                                family's needs</p>
+                             <button class="btn-04">July 19, 2019</button>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+           <div class="btn navigation">
+             <button class="btn-11">View All</button>
+           </div> 
+           <marquee class="marq"   direction="left" loop="">
+            Where every child’s potential is nurtured, creativity is encouraged, and a passion for learning is ignited for a brighter tomorrow."
+
+            "Dedicated to fostering academic 
+           </marquee>
+        </section>
+
+    </main>
+    <footer class="call  bg-blue">
+        <section class="footer-section">
+           <div style="flex: 1; display: flex;  flex-direction: column; align-items: start; justify-content: center;">
+               <div style="align-items: center;"  class="display-flex">
+                  <img style="width:88px; " src="assets/logo.png" alt="">
+                  <div>
+                    <h2 class=" pera2">Kids</h2>
+                    <h2 class=" pera2">Education</h2>
+                  </div>
+               </div>
+               <p class="font-2 text-20  whites hight-1 mt-2 white"> 
+                Working while studying can help you expand your social network and meet people from different backgrounds
+               </p>
+           </div>
+      
+           <div class="no-2" >
+            <div>
+                <h4 style="margin-bottom: 10px;  font-weight:700;" class=" pera-1 pera2">About School</h4>
+                <p class="text-20 weight-500 font-1 white mt-1">Home</p>
+                <p class="text-20 weight-500 font-1 white mt-1">About</p>
+                <p class="text-20 weight-500 font-1 white mt-1">Facilities</p>
+                <p class="text-20 weight-500 font-1 white mt-1">Admission</p>
+            </div>     
+           </div>
+
+           <div class="no-3" >
+
+            <div >
+                <p style="margin-bottom: 10px;  font-weight:700;"  class=" text-24 weight-700 font-1 white">Keep In Touch</p>
+                <div style=" gap: 5px;" class="flex mt-1">
+                   <img src="assets/google+.png" alt="">
+                   <img src="assets/fb.png" alt="">
+                   <img src="assets/twitter.png" alt="">
+                   <img src="assets/dribble.png" alt="">
+                </div>
+            </div>
+              
+           </div>
+         </section>
+    </footer> 
 </body>
 </html>

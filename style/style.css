@@ -5,6 +5,10 @@
   font-weight: 400;
   font-style: normal;
 }
+*{
+    padding: 0;
+    margin: 0;
+}
 /* shaerd style  */
 .display-flex{
     display: flex;
@@ -15,46 +19,45 @@ ul{
 ul >li >a{
     text-decoration: none;
 }
-.logo-school{
+/* .logo-school{
     position: absolute;
     top: 20px;
     left: 141px;
-}
-.card-1{
+} */
+.cardd-1{
     background-color: #FFFFFF;
     background-image: linear-gradient(#DEF5FF, #FFFFFF);
 }
-.card-2{
+.cardd-2{
     background-color: #FFFFFF;
     background-image: linear-gradient(#FFF4DC, #FFFFFF);
 }
-.card-3{
+.cardd-3{
     background-color: #FFFFFF;
     background-image: linear-gradient(#F2E8FF, #FFFFFF);
 }
 
 
 /* utility class */
-.container{
-    max-width: 1440px;
-    margin-inline: auto;
+.container-h{
+    max-width: 1400px;
+    margin: auto;
     padding-inline: var(--padding-section);
-    /* overflow: hidden; */
+    overflow: hidden;
+
 }
 .nav-bar{
     display: flex;
-    margin: 20px 140px;
     align-items: center;
     justify-content: space-between;
+    margin: auto;
     /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
 }
 .nav-bar .main-nav {
        display: flex;
        align-items: center;
 }
-.nav-bar .main-nav img{
-     margin-left: 141px;
-}
+
 .nav-bar .logo-text{
     font-weight: bold;
     font-size: 1.5rem;
@@ -69,6 +72,11 @@ ul >li >a{
 .nav-logo{
     display: flex;
     gap: 32px;
+}
+
+.nav-bar #hamburger{
+font-size: 30px;
+display: none;
 }
 /* naver anchor color */
 .cl-1{
@@ -95,22 +103,18 @@ ul >li >a{
     height: 50px;
     width: 197px;
     color: #FFFFFF;
-    margin-right: 141px;
     font-size: 1.0rem;
     background-color: #FEA301;
     border: none;
     border-radius: 12px;
 }
 /* herder section */
-header{
-    padding: 20px  140px ;
-}
-.header-section{
+
+header .header-section{
     justify-content: center;
-    padding-left: 140px;
-    padding-right: 141px;
     align-items: center;
     gap: 50px;
+    max-width: 1400px;
 }
 .head-title{
     font-weight: bold;
@@ -130,6 +134,9 @@ header{
     font-size: 1.0rem;
     color: #111111;
 }
+.pera2{
+    color: #FFFFFF;
+}
 .btn-2{
     width: 197px;
     height: 50px;
@@ -146,6 +153,10 @@ header{
     width: 460px;
     height: 570px;
 }
+.font-text-2{
+    font-weight: bold;
+    font-size: 1.06rem; 
+}
 /* cart style section  */
 .font-text{
     margin-top: 60px;
@@ -158,16 +169,59 @@ header{
     font-size: 2.0rem;
     text-align: center;
 }
+/* buttons */
+.btn-00{
+    width: 174.51px;
+    height: 47.93px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 47.93px;
+    background-color: #3CD8E8;
+}
+.btn-01{
+    width: 174.51px;
+    height: 47.93px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 47.93px;
+    background-color: #95B226;
+}
+.btn-02{
+    width: 174.51px;
+    height: 47.93px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 47.93px;
+    background-color: #5D58F0;
+}
+.btn-03{
+    width: 174.51px;
+    height: 47.93px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 47.93px;
+    background-color: #023ef0;
+}
+.btn-04{
+    width: 174.51px;
+    height: 47.93px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 47.93px;
+    background-color: #df00f3;
+}
 /* card container  */
-.cards-container{
+.cardds-container{
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
     padding: 20px;
 }
-.card {
-    /* background: #fff; */
+.cardd-section{
+    background-image: url(../assets/bg.png);
+}
+.cardd{
     border-radius: 18.86px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 280px;
@@ -176,11 +230,11 @@ header{
     padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.card:hover {
+.cardd:hover {
     transform: translateY(-18px);
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
 }
-.card a{
+.cardd a{
     text-decoration: none;
     font-size: 0.98rem;
     font-weight: bold;
@@ -197,8 +251,8 @@ header{
 /* font aowsome kit */
 .navigation {
     text-align: center;
-    margin-top: 80px;
-    margin-bottom: 60px;
+    margin-top: 50px;
+  
 }
 .navigation button {
     background: #FEA301;
@@ -213,9 +267,216 @@ header{
 .navigation button:hover {
     background: #6d4a03da;
 }
-/* our storys */
-.img-11{
-    background-color: #FFFFFF;
-    background-repeat: no-repeat;
-    background-image: linear-gradient( #FFFFFF,#fbe6c0);
+/* our storis part */
+.h2-11{
+    text-align: center;
+    font-size: 2.5rem;  
+    font-weight: bold;
 }
+
+.stories{
+    background-image: url("../assets/bg.png"), url(image),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+     
+    background-position: top center ;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+.stories .story-container{
+    display: flex;
+    max-width: 1160px;
+    margin: auto;
+    column-gap: 20px;
+}
+
+.stories::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/bg.png");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(180deg);
+    z-index: -1; 
+}
+
+.stories .right{
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 12px;
+}
+
+.stories .left img{
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+   
+}
+
+.stories .left{
+    flex: 0.8;
+    border-radius: 16px;
+    border-radius: 16px;
+    background-color: white;
+}
+.stories .left .description{
+    padding: 20px;
+    position: relative;
+}
+
+.stories .left button{
+    position: absolute;
+    top: -3px;
+    left: 10%;
+    transform: translateY(-50%);
+}
+.stories .cartt{
+    border-radius: 16px;
+     background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.stories .cartt img{
+    border-radius: 16px 16px 0 0;
+    width: 100%;
+}
+
+.stories .right  .description{
+     position: relative;
+     padding: 30px 20px;
+     height: 100%;
+}
+
+.stories .cartt button{
+    position: absolute;
+    top: -3px;
+    left: 10%;
+    transform: translateY(-50%);
+}
+.stories .btn-11{
+    /* margin-top: 80px; */
+    width: 197px;
+    height: 50px;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF; 
+    border: none;
+    border-radius: 12px;
+    background-color: #111111;
+}
+
+.stories marquee{
+    font-size: 2rem;
+    margin:50px  0 5px;
+    font-weight: 700;
+    color:  #536609;
+}
+/* footer section  */
+.bg-blue{
+    background-color: #0375aa;
+}
+.call{
+    margin-top: -1px;
+}
+.footer-section{
+    display: grid;
+    color: #FFFFFF;
+    grid-template-columns: repeat(3,1fr);
+    max-width: 1400px;
+    margin: auto;
+    min-height: 400px;
+  
+}
+.footer-section .no-2{
+    flex: 1; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.footer-section .no-3{
+    flex: 1;  
+    display: flex; 
+    flex-direction: column; 
+    align-items: end; 
+    justify-content: center;
+    text-align: center;
+}
+/* responsivedes */
+@media screen and (max-width: 550px) {
+    .nav-bar .logo-text{
+      display: none;
+    }
+    .nav-bar .nav-logo{
+        display: none;
+    }
+    .nav-bar{
+        padding: 10px 20px;
+    }
+
+    .nav-bar .contact{
+        display: none;
+    }
+    
+    .nav-bar #hamburger{
+        display: block;
+    }
+    header .header-section{
+        flex-direction: column-reverse;
+        padding: 10px 20px;
+    }
+    header .header-section img{
+        width: 100%;
+    }
+
+
+     header .leftt-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+     }
+    /* stories */
+
+    .stories .left{
+        display: none;
+    }
+    .stories{
+        padding: 10px 20px;
+    }
+    .stories .right .cartt .description p{
+         font-size: 15px;
+    }
+    .stories .right .cartt button{
+        font-size: 15px;
+        width: 120px;
+   }
+    /* footer */
+    .footer-section {
+        grid-template-columns: 1fr;
+        padding: 10px 20px;
+    }
+
+    .footer-section .no-2{
+        align-items: start;
+    }
+    .footer-section .no-3 {
+        text-align: start;
+    }
+    
+    .footer-section .no-3{
+        align-items: start;
+    }
+}
+
+
+
+
+    
